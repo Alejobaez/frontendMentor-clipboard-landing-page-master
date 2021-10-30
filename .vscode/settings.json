@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Atom One Light",
+  "workbench.colorTheme": "GitHub Dark",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -62,6 +62,8 @@
   ],
   "vim.handleKeys": {
     "<C-a>": false,
+    "<C-v>": false,
+    "<C-c>": false,
     "<C-f>": false
   }
 }
