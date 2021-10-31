@@ -22,6 +22,8 @@ html {
 body {
   font-family: "Bai Jamjuree", sans-serif;
   margin: 0;
+  /* background: #333;
+  color: white */
 }
 
 img {
@@ -29,7 +31,7 @@ img {
   height: auto;
   display: block;
 }
-
+/* header */
 .header {
   background-image: url(images/bg-header-mobile.png);
   background-repeat: no-repeat;
@@ -38,26 +40,18 @@ img {
   place-content: center;
 }
 
-.header__content {
-  width: 17.78em;
-  text-align: center;
-}
 
 .header__logo {
   display: flex;
   justify-content: center;
 }
-
-.header__title {
-  font-size: 1.5em;
 }
 
-.header__desc {
+.header__text {
   color: var(--DarkGrayishBlue);
   line-height: 1.5;
   font-size: 0.875em;
 }
-
 .buttoms {
   margin-top: 2em;
   display: flex;
@@ -88,17 +82,61 @@ img {
   background-color: var(--LightBlue);
   box-shadow: 0px 1px 5px var(--LightBlue);
 }
+/* header */
+
+/* section */
+.section,.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom:2em;
+}
+
+
+.list{
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+  margin-top: 2em
+}
+
+.list__title{
+  margin: 0
+}
+.list__item{
+   margin-bottom: 2em
+}
+
+.list__text{
+  color: var(--DarkGrayishBlue);
+  line-height: 1.5;
+}
+
+
+/* media */
+
 @media screen and (min-width: 320px) {
-  .header__content {
+  .header__content,
+  .section__content,
+  .container__content {
     width: 280px;
+    text-align: center
+  }
+  .header__title {
+      font-size: 1.5em;
   }
 }
 
 @media screen and (min-width: 375px) {
-  .header__content {
+  .header__content,
+  .section__content,
+  .container__content {
+
     width: 320px;
+    
   }
-  .header__title {
+  .header__title,
+  .section__title {
     font-size: 1.785em;
   }
 }
@@ -119,7 +157,7 @@ img {
   .header__title {
     font-size: 2.425em;
   }
-  .header__desc {
+  .header__text {
     font-size: 1.125em;
   }
   .buttoms {
@@ -128,5 +166,21 @@ img {
   }
   .buttoms__btn {
     padding: 1em 3em;
+  }
+
+  .container__content{
+    width: 100%;
+    display: flex;
+
+  }
+
+  .container__content > *{
+    width: 50%;
+    flex-basis: 50%
+  }
+  .list{
+    margin-top: unset;
+    text-align:left;
+    padding: 2em 6em 2em;
   }
 }
