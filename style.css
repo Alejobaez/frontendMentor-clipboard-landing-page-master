@@ -175,6 +175,9 @@ img {
     margin-right: auto;
     justify-content: space-between;
   }
+  .footer__list {
+    margin-top: 1em;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -243,8 +246,8 @@ img {
     display: flex;
     align-content: center;
   }
-  .footer__social{
-    margin-top: unset
+  .footer__social {
+    margin-top: 2rem;
   }
 }
 
